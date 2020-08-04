@@ -1,0 +1,9 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    implementation libs.logbackClassic
+    implementation libs.springBootStarter
+
+    testImplementation libs.springBootStarterTest
+    testImplementation libs.junit5Api
+}

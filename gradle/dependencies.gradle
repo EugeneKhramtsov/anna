@@ -1,0 +1,33 @@
+ext {
+    versions = [
+            lombok                      : '1.18.12',
+
+            logback                     : '1.2.3',
+            slf4j                       : '1.7.30',
+
+            springBoot                  : '2.3.2.RELEASE',
+
+            assertj                     : '3.16.1',
+            junit5                      : '5.6.2'
+    ]
+
+    libs = [
+            lombok                      : "org.projectlombok:lombok:$versions.lombok",
+
+            logbackClassic              : "ch.qos.logback:logback-classic:$versions.logback",
+            slf4j                       : "org.slf4j:slf4j-api:$versions.slf4j",
+
+            springBootStarter           : "org.springframework.boot:spring-boot-starter:$versions.springBoot",
+            springBootStarterTest       : "org.springframework.boot:spring-boot-starter-test:$versions.springBoot",
+
+            assertj                     : "org.assertj:assertj-core:$versions.assertj",
+            junit5Api                   : "org.junit.jupiter:junit-jupiter-api:$versions.junit5"
+    ]
+
+    withExcludes = {
+        exclude module: "spring-boot-starter-tomcat"
+        exclude group: "junit", module: "junit"
+        exclude group: "org.hamcrest"
+    }
+}
+
