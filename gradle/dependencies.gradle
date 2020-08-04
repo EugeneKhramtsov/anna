@@ -30,4 +30,3 @@ ext {
         exclude group: "org.hamcrest"
     }
 }
-

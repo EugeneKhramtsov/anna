@@ -1,4 +1,3 @@
 rootProject.name = 'anna-root'
 include 'app'
 include 'commons'
-
