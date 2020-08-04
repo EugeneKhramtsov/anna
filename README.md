@@ -1,2 +1,2 @@
-# com.anna
+# com.pet.anna
 Artificial Neural Network
