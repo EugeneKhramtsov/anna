@@ -60,3 +60,10 @@ subprojects {
 		}
 	}
 }
+
+idea {
+	module {
+		downloadJavadoc = true
+		downloadSources = true
+	}
+}
